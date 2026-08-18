@@ -27,20 +27,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".reveal").forEach(element => observer.observe(element));
 
-  const applicationForm = document.querySelector("#applicationForm");
-  if (applicationForm) {
-    applicationForm.addEventListener("submit", event => {
-      event.preventDefault();
-      const name = applicationForm.querySelector("[name='name']").value.trim();
-      const phone = applicationForm.querySelector("[name='phone']").value.trim();
-      if (!name || !phone) {
-        alert("Пожалуйста, заполните имя и контактный телефон.");
-        return;
-      }
-      alert("Заявка отправлена");
-      applicationForm.reset();
-    });
-  }
+  // const applicationForm = document.querySelector("#applicationForm");
+  // if (applicationForm) {
+  //   applicationForm.addEventListener("submit", event => {
+  //     event.preventDefault();
+  //     const name = applicationForm.querySelector("[name='name']").value.trim();
+  //     const phone = applicationForm.querySelector("[name='phone']").value.trim();
+  //     if (!name || !phone) {
+  //       alert("Пожалуйста, заполните имя и контактный телефон.");
+  //       return;
+  //     }
+  //     alert("Заявка отправлена");
+  //     applicationForm.reset();
+  //   });
+  // }
 
   const year = document.querySelector("#currentYear");
   if (year) year.textContent = new Date().getFullYear();
