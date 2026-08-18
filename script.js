@@ -27,16 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".reveal").forEach(element => observer.observe(element));
 
-  // document.querySelectorAll('a[href$=".html"]').forEach(link => {
-  //   link.addEventListener("click", event => {
-  //     const destination = link.getAttribute("href");
-  //     if (!destination || destination.startsWith("#") || destination === currentPage) return;
-  //     event.preventDefault();
-  //     document.body.classList.add("leaving");
-  //     setTimeout(() => window.location.href = destination, 380);
-  //   });
-  // });
-
   const applicationForm = document.querySelector("#applicationForm");
   if (applicationForm) {
     applicationForm.addEventListener("submit", event => {

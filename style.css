@@ -590,30 +590,6 @@ url(./images/main_photo.jpg) center/cover
     font-size:15px
 }
 
-.map {
-    min-height:430px;
-    background:
-linear-gradient(rgba(20,23,27,.15),rgba(20,23,27,.15)),
-url("https://tile.openstreetmap.org/5/18/10.png");
-    background-size:cover;
-    border:1px solid var(--line);
-    position:relative;
-    overflow:hidden
-}
-
-.map:after {
-    content:"";
-    position:absolute;
-    left:50%;
-    top:48%;
-    width:20px;
-    height:20px;
-    border-radius:50% 50% 50% 0;
-    background:var(--accent);
-    transform:rotate(-45deg);
-    box-shadow:0 0 0 7px rgba(242,169,0,.18)
-}
-
 .coords {
     background:var(--dark);
     color:#fff;
@@ -673,10 +649,6 @@ url("https://tile.openstreetmap.org/5/18/10.png");
     justify-content:space-between
 }
 
-/* =========================
-   SCROLL ANIMATIONS
-   ========================= */
-
 .reveal {
     opacity:0;
     transform:translateY(22px);
@@ -687,32 +659,6 @@ url("https://tile.openstreetmap.org/5/18/10.png");
     opacity:1;
     transform:none
 }
-
-/* =========================
-   PAGE TRANSITIONS
-   ========================= 
-
- .page-transition {
-    position:fixed;
-    inset:0;
-    background:var(--accent);
-    z-index:9999;
-    transform:translateY(100%);
-    pointer-events:none
-}
-
-body.leaving .page-transition {
-    animation:leave .45s ease forwards
-}
-
-@keyframes leave {
-    0% {
-        transform:translateY(100%)
-    }
-    100% {
-        transform:translateY(0)
-    }ш
-} */
 
 
 @media(max-width:950px) {
