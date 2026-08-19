@@ -254,6 +254,13 @@ url(./images/main_photo.jpg) center/cover
     letter-spacing:1px;
     color:#bfc2c6
 }
+.stat p {
+    padding: 2px;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#bfc2c6
+}
 
 .section {
     padding:82px 0
