@@ -324,7 +324,37 @@ url(./images/main_photo.jpg) center/cover
 .card-serv {
     display: flex;
     justify-content: space-between;
-    
+    border:1px solid var(--line);
+    background:#fff;
+    padding:28px;
+    transition:.3s
+}
+
+.card-serv:hover {
+    transform:translateY(-7px);
+    box-shadow:var(--shadow);
+    border-color:#d9dce0
+}
+
+.card-serv .number {
+    color:var(--accent);
+    font-size:12px;
+    font-weight:800;
+    margin-bottom:20px
+}
+
+.card-serv h3 {
+    font-size:19px;
+    margin-bottom:12px
+}
+
+.card-serv p {
+    font-size:14px;
+    color:var(--muted)
+}
+
+.card-serv img{
+    border-radius: 3px;
 }
 
 .card {
