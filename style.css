@@ -301,7 +301,7 @@ url(./images/main_photo.jpg) center/cover
 .grid-4 {
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:18px
+    gap:18px;
 }
 
 .grid-3 {
@@ -314,6 +314,17 @@ url(./images/main_photo.jpg) center/cover
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:30px
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+.card-serv {
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .card {
